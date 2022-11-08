@@ -1,4 +1,4 @@
-## 1) Realizar média ponderada por SQL, após isso usar o Python
+## 1) Realizar média ponderada por SQL
 
 select 
   date,
@@ -36,7 +36,6 @@ group by country_name
 order by 2 desc;
   
 ## 4) Por pais trazer o indice de mortos pela população, mortos por genero, casos por população e casos por genero.
-### a população nao bate, tem diferentes dados para os mesmos paises
 
 select
   country_name,
@@ -117,7 +116,6 @@ from `bigquery-public-data.covid19_open_data_eu.covid19_open_data`
 order by 1;
   
 ## 10) Relação dos paises, com uma classificação de expectativa de vida de menos de 50 anos, outro de 50 - 65 anos, 65 a 80 e acima de 80
-### não soube criar esta lógica, imagino que tenha que usar IF mas não compreendi como usar
 
 select
   country_name,
